@@ -21,6 +21,12 @@ WORKDIR UD-Demo-Anthropocene-GratteCiel-
 RUN npm install
 RUN npm run build
 
+######### Install the ExpressJS server
+WORKDIR /
+RUN git clone https://github.com/VCityTeam/UD-SimpleServer.git
+WORKDIR UD-SimpleServer
+RUN npm install
+
 
 EXPOSE 80
-CMD [ "node", "./index.js", "/UD-Demo-Anthropocene-GratteCiel-", "80" ]
+CMD [ "node", "./index.js", "../UD-Demo-Anthropocene-GratteCiel-", "80" ]
