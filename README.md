@@ -1,4 +1,3 @@
-# UD-Demo-Anthropocene-GratteCiel-docker
 # Dockerized UD-Demo-Anthropocene-GratteCiel
 
 This container wraps the [Anthropocene-GratteCiel](https://github.com/VCityTeam/UD-Demo-Anthropocene-GratteCiel-) demo.
